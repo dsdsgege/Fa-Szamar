@@ -1,0 +1,39 @@
+@import url('https://fonts.google.com/specimen/Edu+VIC+WA+NT+Beginner');
+
+#logo {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-weight: bold;
+    color:#b4b4b4;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fdonkey_394860&psig=AOvVaw24HSYonklpVCDFH1p_6Dhz&ust=1723800394854000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiByIPX9ocDFQAAAAAdAAAAABAJ'); 
+}
+
+.h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.index_img {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://via.placeholder.com/1920x400');
+    background-size: cover;
+    background-position: center;
+}
