@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fa Szamár</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <body>
 
+    <header>
+    <img src="images/logo2.png" class="logo" alt="">
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <div><img src="images/logo2.png" class="logo" alt=""></div>
         <ul>
-          <li><a class="active" href="#">Kezdőlap</a></li>
-          <li><a href="#">Galéria</a></li>
-          <li><a href="#">Elérhetőségek</a></li>
+          <li><a  href="#index.html">Kezdőlap</a></li>
+          <li><a href="#gallery.html">Galéria</a></li>
+          <li><a href="#contacts.html">Elérhetőségek</a></li>
         </ul>
       </nav>
+    </header>
+
 
     <div id="home">
 
@@ -36,14 +37,22 @@
                     <div >
                         <img class="slide" src="images/fireplace.jpg" alt="">
                     </div>
-                    <button class="prev"></button>
-                    <button class="next"></button>
+                    <button class="prev">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                        </span>
+                    </button>
+                    <button class="next">
+                        <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span></button>
                 </div>
                 <script src="js.js"></script>
                 
 
                 <img src="images/logo2.png" class="logo" alt="logo">
                 <h1>Üdvözöljük a Fa Szamár vendégházban</h1>
+                <hr>
                 <div class="welcome"> 
                     <p>Köszöntjük kedves vendégeinket újonnan megnyílt vendégházunkban Demjénben, 
                         a Laskó patak mentén, a Demjéni Termál Völgyben. Vendégeink nyugodt, csendes környezetre találnak,
