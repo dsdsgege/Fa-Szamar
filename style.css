@@ -43,6 +43,20 @@ li, a {
     text-decoration: none;
 }
 
+/*header animacio*/
+header {
+    animation: nav-load 400ms ease-in;
+}
+
+@keyframes nav-load {
+    0% {
+        transform:translateY(-100%)
+    }
+    100% {
+        transform:translateY(0%)
+    }
+}
+
 .logo {
     width: 120px;
     height: 120px;
@@ -99,12 +113,23 @@ h1 {
     position: relative;
     object-fit: cover;
     padding-bottom:10px;
+    animation: slide-animation 1200ms ease-in;
 }
 
+@keyframes slide-animation {
+    from {
+        opacity: 70%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
  
 .slide.hide {
     display: none;
 }
+
 
 .prev, .next {
     position: absolute;
@@ -160,6 +185,7 @@ hr {
 }
 
 #services {
+    background-image: url(images/sodomb.jpg);
     margin-top:5%;
     height: 200px;
     display: block;
@@ -259,6 +285,19 @@ hr {
     width: 1600px;
     margin:auto;
     text-align: center;
+    animation: latnivalo 700ms ease-in-out;
+}
+
+@keyframes latnivalo {
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 80%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .latnivalo_kepek img {
@@ -266,6 +305,16 @@ hr {
     height: 330px;
     display:inline-block;
     padding: 25px;
+    animation: slide-in 800ms;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .latnivalo_kepek img:hover {
@@ -284,4 +333,131 @@ hr {
 
 .latnivalo {
     display:none;
+}
+
+#contact {
+    margin-top: 30px;;
+    background-color: #222222;
+    height: 250px;
+}
+
+
+/* telefon méret */
+
+@media screen and (max-width:800px) {
+    .box{
+        padding: 10px;
+        color: white;
+        position: absolute;
+        height: 250px;
+        width: 300px;
+        background-color: #18644b;
+        z-index: 10;
+        margin-left: 65%;
+    }
+
+    nav ul li{
+        display:none;
+    }
+
+    #services  {
+        margin-top:50px;
+        width: 800px;
+        background-image: url(images/sodomb.jpg);
+    }
+
+    .latnivalo_kepek {
+        width: 800px;
+    }
+
+    .latnivalo_kepek img{
+        width: 360px;
+        height: 240px;
+        display:block;
+        padding: 25px;
+        animation: slide-in 800ms;
+    }
+
+    .latnivalok {
+        margin-top:150px;
+    }
+
+    .latnivalo {
+        display: none;
+    }
+    .latnivalo.always {
+        display: block;
+        margin-top:10px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        margin-bottom:20px;
+        margin:auto;
+    }
+    .latnivalo.show {
+        display: block;
+        margin-top:10px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        margin-bottom:20px;
+        margin:auto;
+    }
+
+    h1 {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav ul li{
+        display:none;
+    }
+
+    #services  {
+        margin-top:50px;
+        width: 900px;
+        background-image: url(images/sodomb.jpg);
+    }
+
+    .latnivalo_kepek {
+        width: 900px;
+    }
+
+    .latnivalo_kepek img{
+        width: 360px;
+        height: 240px;
+        display:block;
+        padding: 25px;
+        animation: slide-in 800ms;
+    }
+
+    .latnivalok {
+        margin-top:150px;
+    }
+
+    .latnivalo {
+        display: none;
+    }
+    .latnivalo.always {
+        display: block;
+        margin-top:10px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        margin-bottom:20px;
+        margin:auto;
+    }
+    .latnivalo.show {
+        display: block;
+        margin-top:10px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        margin-bottom:20px;
+        margin:auto;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    
+
 }
