@@ -4,12 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(179, 178, 178);
+    background-color: white;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
-        background-color: #FFFFFF;
+    background-color: #FFFFFF;
     color: #333333;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ nav li a {
     transition: all 0.3s ease 0s;
 }
 nav li a:hover {
-    color:#807e7e;
+    color:black;
     transition: all 0.3s ease 0s;
 }
 
@@ -39,7 +39,7 @@ li, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:#222222;
+    color:#747373;
     text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ li, a {
     height: 120px;
     border-radius: 50%;
     border-style: solid;
-    border-color:#d8d8d8;
+    border-color:#919467;
     border-width: 4px;
 }
 
@@ -128,6 +128,17 @@ h1 {
 }
 
 .material-symbols-outlined {
+    color: #222222;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.material-symbols-outlined:hover {
+    color: white;
+    background-color: #222222;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -139,7 +150,7 @@ hr {
     
     margin:auto;
     width: 25%;
-    border: 2px solid #505050;
+    border: 1.5px solid #919467;
     border-radius: 10px;
     margin-bottom:2%;
 }
@@ -156,6 +167,7 @@ hr {
     object-fit: cover;
     background: #222222;
     z-index: 0;
+    margin-bottom:5%;
 }
 
 .box {
@@ -164,7 +176,112 @@ hr {
     position: absolute;
     height: 300px;
     width: 350px;
-    background-color: #222222;
+    background-color: #18644b;
     z-index: 10;
     margin-left: 65%;
+
+}
+
+.box h3 {
+    background-color: #18644b;
+    margin-bottom:5px;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.box ul li{ 
+    font-size:small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #18644b;
+    color:#ffffff;
+    list-style:none;
+    text-align:start;
+    padding-left:8px;
+    padding-bottom:5px;
+    font-weight:lighter;
+}
+
+#latnivalok {
+    text-align: start;
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+#latnivalok hr {
+    margin-left:1px;
+    width: 100px;
+    margin-bottom:5px;
+}
+
+
+/*tovabbi kepek gomb*/
+
+.tovabbi {
+    margin-top:10px;
+    background-color: #919467 ;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+    margin-bottom:20px
+}
+
+.tovabbi.hide {
+    display: none;
+}
+
+.tovabbi:hover {
+    cursor: pointer;
+    background-color: #18644b;
+}
+
+/*kevesebb kepek gomb*/
+
+.kevesebb {
+    display: none;
+}
+
+.kevesebb.show {
+    display: block;
+    margin-top:10px;
+    background-color: #919467 ;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+    margin-bottom:20px;
+    margin:auto;
+}
+
+.kevesebb.show:hover {
+    cursor: pointer;
+    background-color: #18644b;
+}
+.latnivalo_kepek {
+    width: 1600px;
+    margin:auto;
+    text-align: center;
+}
+
+.latnivalo_kepek img {
+    width: 420px;
+    height: 330px;
+    display:inline-block;
+    padding: 25px;
+}
+
+.latnivalo_kepek img:hover {
+    transition:all 0.5s ease 0s;
+
+    transform: scale(1.2);
+}
+
+.latnivalo.show {
+    display: inline-block;
+}
+
+.latnivalo.always {
+    display: inline-block;
+}
+
+.latnivalo {
+    display:none;
 }

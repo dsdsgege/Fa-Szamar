@@ -5,7 +5,6 @@ const next = document.querySelector('.next');
 const totalSlides = slides.length;
 let index = 0;
 
-
 prev.addEventListener("click",function() {
     index--;
     if(index < 0) {
@@ -37,8 +36,4 @@ function showItems() {
     slides[index].classList.remove("hide");
 }
 
-
-
-
 window.onload=showItems();
-
