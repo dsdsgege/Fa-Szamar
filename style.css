@@ -75,9 +75,7 @@ header {
 }
 
 
-#home {
 
-}
 
 h1 {
     font-size: 2.5em;
@@ -144,4 +142,16 @@ hr {
     border: 2px solid #505050;
     border-radius: 10px;
     margin-bottom:2%;
+}
+
+.slides img {
+    width: ;
+}
+
+#services {
+    height: 200px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    background: #222222;
 }
