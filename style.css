@@ -23,11 +23,10 @@ nav ul {
 
 nav li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0px 30px;
 }
 
 nav li a {
-    
     font-size: 30px;
     transition: all 0.3s ease 0s;
 }
@@ -72,6 +71,7 @@ header {
     width:50% ;
     text-align: center;
     margin:auto;
+    margin-bottom:30px;
 }
 
 
@@ -145,13 +145,26 @@ hr {
 }
 
 .slides img {
-    width: ;
+    object-fit: contain;
 }
 
 #services {
+    margin-top:5%;
     height: 200px;
     display: block;
     position: relative;
     object-fit: cover;
     background: #222222;
+    z-index: 0;
+}
+
+.box {
+    padding: 10px;
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    background-color: #222222;
+    z-index: 10;
+    margin-left: 65%;
 }
