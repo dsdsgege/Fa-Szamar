@@ -1,0 +1,240 @@
+.nav-item.nav-link{
+    margin-right:5%;
+}
+
+.navbar-nav{
+    font-size: 200%;
+    font-weight: bold;
+    padding:0rem 5rem 0rem 5rem;
+
+}
+
+.logo {
+    margin-left:3%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border-color:#919467;
+    border-width: 4px;
+}
+
+.slides {
+    align-items: center;
+}
+
+.slide.show {
+    display: block;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    object-fit: cover;
+    padding-bottom:10px;
+    animation: slide-animation 1200ms ease-in;
+}
+
+@keyframes slide-animation {
+    from {
+        opacity: 70%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.slide.hide {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.material-symbols-outlined {
+    background-color: white;
+    color: #222222;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    color: white;
+    background-color: #222222;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+ 
+.sodomb {
+    margin-top: 5rem;
+    margin-bottom:5rem;
+}
+
+#services {
+    background-image: url(images/sodomb.jpg);
+    height: 200px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    background: #222222;
+    z-index: 0;
+    margin-bottom:5%;
+}
+
+
+.box {
+    margin-top:2rem;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    background-color: #18644b;
+    z-index: 10;
+    margin-left: 65%;
+
+}
+
+.box h3 {
+    background-color: #18644b;
+    margin-bottom:5px;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.box ul li{ 
+    font-size:small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #18644b;
+    color:#ffffff;
+    list-style:none;
+    text-align:start;
+    padding-left:8px;
+    padding-bottom:5px;
+    font-weight:lighter;
+}
+
+
+/*tovabbi kepek gomb*/
+
+.tovabbi {
+    display:flex;
+    margin-top:2rem;
+    margin:auto;
+    background-color: #919467 ;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+}
+
+.tovabbi.hide {
+    display: none;
+}
+
+.tovabbi:hover {
+    cursor: pointer;
+    background-color: #18644b;
+}
+
+/*kevesebb kepek gomb*/
+
+.kevesebb {
+    display: none;
+}
+
+.kevesebb.show {
+    display: block;
+    margin-top:10px;
+    background-color: #919467 ;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+    margin-bottom:20px;
+    margin:auto;
+}
+
+.kevesebb.show:hover {
+    cursor: pointer;
+    background-color: #18644b;
+}
+.latnivalo_kepek {
+    text-align: center;
+    animation: latnivalo 1000ms ease-in-out;
+}
+
+
+
+@keyframes latnivalo {
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 80%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.latnivalo_kepek img {
+    width: 420px;
+    height: 330px;
+    padding: 2rem;
+    animation: slide-in 800ms;
+
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.latnivalo_kepek img:hover {
+    transition:all 0.5s ease 0s;
+
+    transform: scale(1.2);
+}
+
+.latnivalo.show {
+    display: inline-block;
+}
+
+.latnivalo.always {
+    display: inline-block;
+}
+
+.latnivalo {
+    display:none;
+}

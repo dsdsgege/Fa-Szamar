@@ -99,7 +99,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-
+.slides {
+    align-items: center;
+}
 
 .slide img{
     width: 50%;
@@ -140,8 +142,6 @@ h1 {
     border: none;
     padding: 10px;
     cursor: pointer;
-    
-  
 }
 
 .prev {
@@ -159,7 +159,7 @@ h1 {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
-  }
+}
 
 .material-symbols-outlined:hover {
     color: white;
@@ -169,7 +169,7 @@ h1 {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
-  }
+}
   
 hr {
     
@@ -288,6 +288,8 @@ hr {
     animation: latnivalo 700ms ease-in-out;
 }
 
+
+
 @keyframes latnivalo {
     0% {
         opacity: 50%;
@@ -304,8 +306,10 @@ hr {
     width: 420px;
     height: 330px;
     display:inline-block;
-    padding: 25px;
+    justify-content: space-around;
+    padding: 2rem;
     animation: slide-in 800ms;
+
 }
 
 @keyframes slide-in {
@@ -343,6 +347,7 @@ hr {
 
 
 /* telefon méret */
+
 
 @media screen and (max-width:800px) {
     .box{
@@ -457,7 +462,4 @@ hr {
     h1 {
         font-size: small;
     }
-
-    
-
 }
